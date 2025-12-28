@@ -1,101 +1,132 @@
+/* ================== Reset e corpo ================== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F0F2F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #1c1c1c, #111111);
     margin: 0;
     padding: 0;
+    color: #e0e0e0;
 }
 
+/* ================== Container ================== */
 .container {
     max-width: 600px;
-    margin: auto;
-    padding: 16px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
+/* ================== Título ================== */
 h1 {
     text-align: center;
-    color: #4B0082;
-    margin-bottom: 20px;
+    color: #c0c0c0;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    font-weight: bold;
 }
 
+/* ================== Inputs e Botões ================== */
 .card-input {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.card-input input, .card-input select, .card-input button {
-    padding: 12px;
-    margin-top: 6px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+.card-input input, .card-input select {
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: 1px solid #444;
     font-size: 16px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.card-input input::placeholder,
+.card-input select::placeholder {
+    color: #aaa;
 }
 
 .card-input button {
-    background-color: #4B0082;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #000000;
+    color: #c0c0c0;
+    border: 1px solid #c0c0c0;
+    border-radius: 12px;
+    padding: 14px;
     font-weight: bold;
-    transition: background 0.3s;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(192,192,192,0.2);
 }
 
 .card-input button:hover {
-    background-color: #6A0DAD;
+    background-color: #222222;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(192,192,192,0.4);
 }
 
+/* ================== Resumo ================== */
 .resumo {
-    background-color: white;
-    padding: 16px;
-    border-radius: 14px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 16px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     font-size: 16px;
+    color: #e0e0e0;
 }
 
+/* ================== Contêiner de Cartões ================== */
 .cartoes-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     max-height: 400px;
     overflow-y: auto; 
-    padding-right: 4px;
+    padding-right: 6px;
 }
 
+/* ================== Cartão ================== */
 .cartao-card {
-    background-color: white;
-    padding: 16px;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: transform 0.2s;
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cartao-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.2);
 }
 
 .cartao-card h3 {
-    margin: 0 0 8px 0;
-    font-size: 20px;
-    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #c0c0c0;
 }
 
 .cartao-card p {
     margin: 4px 0;
     font-size: 16px;
+    color: #e0e0e0;
 }
 
+/* ================== Barra de Progresso ================== */
 .progresso-container {
-    background-color: #eee;
-    border-radius: 10px;
+    background-color: #333;
+    border-radius: 12px;
     overflow: hidden;
-    height: 12px;
-    margin-top: 6px;
+    height: 14px;
+    margin-top: 8px;
 }
 
 .progresso {
-    height: 12px;
-    border-radius: 10px;
+    height: 14px;
+    border-radius: 12px;
     transition: width 0.5s;
 }
 
@@ -103,13 +134,12 @@ h1 {
 .estado-moderado { color: #FFA000; font-weight: bold; }
 .estado-critico { color: #E53935; font-weight: bold; }
 
-/* Scroll moderno */
+/* ================== Scroll moderno ================== */
 .cartoes-container::-webkit-scrollbar {
     width: 8px;
 }
+
 .cartoes-container::-webkit-scrollbar-thumb {
-    background-color: #4B0082;
+    background-color: #c0c0c0;
     border-radius: 4px;
 }
-
-
