@@ -1,1 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F2F5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+.card-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.card-input input, .card-input select, .card-input button {
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.card-input button {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card-input button:hover {
+    background-color: #6A0DAD;
+}
+
+.resumo {
+    background-color: white;
+    padding: 16px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    font-size: 16px;
+}
+
+.cartoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 400px;
+    overflow-y: auto; 
+    padding-right: 4px;
+}
+
+.cartao-card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.cartao-card:hover {
+    transform: translateY(-4px);
+}
+
+.cartao-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.cartao-card p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.progresso-container {
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 6px;
+}
+
+.progresso {
+    height: 12px;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+.estado-suave { color: #43A047; font-weight: bold; }
+.estado-moderado { color: #FFA000; font-weight: bold; }
+.estado-critico { color: #E53935; font-weight: bold; }
+
+/* Scroll moderno */
+.cartoes-container::-webkit-scrollbar {
+    width: 8px;
+}
+.cartoes-container::-webkit-scrollbar-thumb {
+    background-color: #4B0082;
+    border-radius: 4px;
+}
+
 
