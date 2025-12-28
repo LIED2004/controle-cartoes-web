@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Cartões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💳 Controle de Cartões</h1>
 
+        <div class="card-input">
+            <input type="text" id="nomeCartao" placeholder="Nome do cartão">
+            <input type="number" id="limiteCartao" placeholder="Limite do cartão">
+            <button id="btnAdicionarCartao">Adicionar Cartão</button>
+        </div>
+
+        <div class="card-input">
+            <select id="selectCartao"></select>
+            <input type="text" id="descricaoGasto" placeholder="Onde você gastou?">
+            <input type="number" id="valorGasto" placeholder="Valor gasto">
+            <button id="btnAdicionarGasto">Adicionar Gasto</button>
+        </div>
+
+        <h2>Resumo Geral</h2>
+        <div id="resumoGeral" class="resumo"></div>
+
+        <h2>Cartões</h2>
+        <div id="cartoesContainer" class="cartoes-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
