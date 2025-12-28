@@ -145,3 +145,18 @@ h1 {
     background-color: #ffcc00;
     border-radius: 5px;
 }
+.extrato {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.extrato li {
+    padding: 4px 0;
+    font-size: 15px;
+    color: #ccc;
+    border-bottom: 1px solid #222;
+}
+
+
