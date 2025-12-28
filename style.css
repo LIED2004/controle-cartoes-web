@@ -1,29 +1,30 @@
-/* ================== Reset e Corpo ================== */
+/* ================== Reset e corpo ================== */
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(145deg, #0a0a0a, #1c1c1c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
     margin: 0;
     padding: 0;
-    color: #f0f0f0;
+    color: #e0e0e0;
 }
 
 /* ================== Container ================== */
 .container {
-    max-width: 650px;
+    max-width: 600px;
     margin: 40px auto;
-    padding: 30px;
-    background-color: #121212;
+    padding: 25px;
+    background: linear-gradient(135deg, #111111, #222222);
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(255,255,255,0.1);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
 }
 
 /* ================== Título ================== */
 h1 {
     text-align: center;
-    color: #f5f5f5;
+    color: #c0c0c0;
     margin-bottom: 30px;
-    font-size: 28px;
-    text-shadow: 0 2px 6px rgba(255,255,255,0.2);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 /* ================== Inputs e Botões ================== */
@@ -33,50 +34,53 @@ h1 {
     margin-bottom: 25px;
 }
 
-.card-input input, .card-input select {
-    padding: 16px;
-    margin-top: 10px;
-    border-radius: 14px;
+.card-input input,
+.card-input select {
+    padding: 15px;
+    margin-top: 8px;
+    border-radius: 15px;
     border: 1px solid #555;
     font-size: 16px;
-    background-color: #1f1f1f;
-    color: #f0f0f0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 
 .card-input input::placeholder,
 .card-input select::placeholder {
-    color: #aaa;
+    color: #888;
 }
 
 .card-input button {
-    background-color: #000000;
-    color: #f5f5f5;
-    border: 1px solid #c0c0c0;
-    border-radius: 14px;
-    padding: 16px;
-    font-weight: 700;
-    margin-top: 12px;
+    background-color: #111;
+    color: #c0c0c0;
+    border: 2px solid #c0c0c0;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(255,255,255,0.1);
+    box-shadow: 0 5px 15px rgba(192,192,192,0.2);
 }
 
 .card-input button:hover {
-    background-color: #1c1c1c;
-    color: #ffcc00;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(255,204,0,0.3);
+    background-color: #333;
+    color: #ffffff;
+    border-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.3);
 }
 
 /* ================== Resumo ================== */
 .resumo {
-    background-color: #1a1a1a;
-    padding: 22px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 20px;
     border-radius: 18px;
     margin-bottom: 25px;
-    box-shadow: 0 6px 20px rgba(255,255,255,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
     font-size: 16px;
-    color: #f5f5f5;
+    color: #e0e0e0;
+    border: 1px solid #555;
 }
 
 /* ================== Contêiner de Cartões ================== */
@@ -91,35 +95,36 @@ h1 {
 
 /* ================== Cartão ================== */
 .cartao-card {
-    background: linear-gradient(135deg, #0a0a0a, #2b2b2b);
-    padding: 22px;
+    background: linear-gradient(135deg, #111111, #1f1f1f);
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    border: 2px solid #c0c0c0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cartao-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(255,255,255,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(192,192,192,0.5);
 }
 
 .cartao-card h3 {
     margin: 0 0 12px 0;
     font-size: 22px;
-    color: #ffcc00;
-    letter-spacing: 1px;
+    color: #c0c0c0;
+    letter-spacing: 0.5px;
 }
 
 .cartao-card p {
-    margin: 4px 0;
+    margin: 5px 0;
     font-size: 16px;
-    color: #f0f0f0;
+    color: #e0e0e0;
 }
 
 /* ================== Barra de Progresso ================== */
 .progresso-container {
-    background-color: #222;
-    border-radius: 14px;
+    background-color: #333;
+    border-radius: 15px;
     overflow: hidden;
     height: 16px;
     margin-top: 10px;
@@ -127,11 +132,10 @@ h1 {
 
 .progresso {
     height: 16px;
-    border-radius: 14px;
+    border-radius: 15px;
     transition: width 0.5s;
 }
 
-/* ================== Estados ================== */
 .estado-suave { color: #43A047; font-weight: bold; }
 .estado-moderado { color: #FFA000; font-weight: bold; }
 .estado-critico { color: #E53935; font-weight: bold; }
@@ -142,21 +146,6 @@ h1 {
 }
 
 .cartoes-container::-webkit-scrollbar-thumb {
-    background-color: #ffcc00;
+    background-color: #c0c0c0;
     border-radius: 5px;
 }
-.extrato {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 10px;
-    border-top: 1px solid #444;
-}
-
-.extrato li {
-    padding: 4px 0;
-    font-size: 15px;
-    color: #ccc;
-    border-bottom: 1px solid #222;
-}
-
-
