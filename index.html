@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Cartões VIP</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>💳 Controle de Cartões VIP</h1>
+        <h1><i class="fas fa-credit-card"></i> Controle de Cartões VIP</h1>
 
+        <!-- ================== Adicionar Cartão ================== -->
         <div class="card-input">
             <input type="text" id="nomeCartao" placeholder="Nome do cartão">
             <input type="number" id="limiteCartao" placeholder="Limite do cartão">
-            <button id="btnAdicionarCartao">Adicionar Cartão</button>
+            <button id="btnAdicionarCartao"><i class="fas fa-plus"></i> Adicionar Cartão</button>
         </div>
 
+        <!-- ================== Adicionar Gasto ================== -->
         <div class="card-input">
-            <select id="selectCartao"></select>
+            <select id="selectCartao">
+                <option value="" disabled selected>Selecione um cartão</option>
+            </select>
             <input type="text" id="descricaoGasto" placeholder="Onde você gastou?">
             <input type="number" id="valorGasto" placeholder="Valor gasto">
-            <button id="btnAdicionarGasto">Adicionar Gasto</button>
+            <button id="btnAdicionarGasto"><i class="fas fa-money-bill-wave"></i> Adicionar Gasto</button>
         </div>
 
-        <h2>Resumo Geral</h2>
+        <!-- ================== Resumo Geral ================== -->
+        <h2><i class="fas fa-chart-pie"></i> Resumo Geral</h2>
         <div id="resumoGeral" class="resumo"></div>
 
-        <h2>Cartões</h2>
+        <!-- ================== Lista de Cartões ================== -->
+        <h2><i class="fas fa-wallet"></i> Cartões</h2>
         <div id="cartoesContainer" class="cartoes-container"></div>
     </div>
 
