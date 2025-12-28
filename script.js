@@ -1,5 +1,3 @@
-
-
 const cartoes = [];
 
 const nomeCartao = document.getElementById('nomeCartao');
@@ -33,6 +31,18 @@ function atualizarResumo() {
         let perc = Math.min((gastoTotal / c.limite) * 100, 100);
         let corBarra = estado === 'Crítico' ? '#E53935' : estado === 'Moderado' ? '#FFA000' : '#43A047';
 
+        // Mini extrato de gastos
+        let extratoHTML = '';
+        if(c.gastos.length > 0){
+            extratoHTML = '<ul class="extrato">';
+            c.gastos.forEach(g => {
+                extratoHTML += `<li>${g.descricao}: R$ ${g.valor.toFixed(2)}</li>`;
+            });
+            extratoHTML += '</ul>';
+        } else {
+            extratoHTML = '<p style="color:#888;">Sem gastos cadastrados</p>';
+        }
+
         divCartao.innerHTML = `
             <h3>${c.nome}</h3>
             <p>Limite: R$ ${c.limite.toFixed(2)}</p>
@@ -42,6 +52,7 @@ function atualizarResumo() {
                 <div class="progresso" style="width:${perc}%; background-color:${corBarra}"></div>
             </div>
             <p class="estado-${classeEstado}">Estado: ${estado}</p>
+            ${extratoHTML}
         `;
         cartoesContainer.appendChild(divCartao);
     });
